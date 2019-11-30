@@ -28,7 +28,7 @@ public class EsotericaUpdater {
 		}
 		
 		// parse results
-		double version = (double) map.get("version");
+		String version = (String) map.get("version");
 		String filename = String.format("EsotericaCraft-%s.jar", String.valueOf(version));
 		String downloadUrl= (String) map.get("file");
 		
